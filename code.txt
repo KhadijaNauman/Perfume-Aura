@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Scents - The Essence of Luxury</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font family -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom gradient for a subtle luxury feel */
+        .luxury-bg {
+            background-color: #f7f7f5;
+        }
+        .text-accent {
+            color: #b48b52; /* Deep Gold/Bronze */
+        }
+        .border-accent {
+            border-color: #b48b52;
+        }
+        .bg-dark-primary {
+            background-color: #1a1a1a;
+        }
+    </style>
+</head>
+<body class="luxury-bg antialiased">
+
+    <!-- Tailwind Configuration for customization -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#1a1a1a',
+                        'accent': '#b48b52',
+                        'soft-bg': '#f7f7f5',
+                    },
+                    boxShadow: {
+                        'luxury': '0 10px 30px -10px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
+                <!-- Logo -->
+                <div class="flex justify-start lg:w-0 lg:flex-1">
+                    <a href="#" class="text-3xl font-extrabold text-primary tracking-tighter">
+                        Aura<span class="text-accent">Scents</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex space-x-10">
+                    <a href="#featured" class="text-base font-medium text-gray-700 hover:text-accent transition">Featured</a>
+                    <a href="#collection" class="text-base font-medium text-gray-700 hover:text-accent transition">Collection</a>
+                    <a href="#story" class="text-base font-medium text-gray-700 hover:text-accent transition">Our Story</a>
+                    <a href="#" class="text-base font-medium text-gray-700 hover:text-accent transition">Contact</a>
+                </nav>
+
+                <!-- Action Buttons -->
+                <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0 space-x-4">
+                    <button class="text-gray-600 hover:text-accent p-2 rounded-full transition">
+                        <!-- Icon: Search -->
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </button>
+                    <button class="text-gray-600 hover:text-accent p-2 rounded-full transition relative">
+                        <!-- Icon: Cart -->
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                        <span class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white transform translate-x-1/2 -translate-y-1/2 bg-accent rounded-full">3</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative bg-dark-primary text-white overflow-hidden">
+            <!-- Background Image/Pattern - Using a dark, moody placeholder -->
+            <div class="absolute inset-0 z-0 opacity-20 bg-center bg-cover" style="background-image: url('https://placehold.co/1920x1080/1a1a1a/cccccc?text=Luxury+Aroma');"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20 md:py-36 flex flex-col md:flex-row items-center">
+                <!-- Text Content -->
+                <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                    <p class="text-accent text-lg font-semibold mb-3 tracking-widest uppercase">Signature Collection</p>
+                    <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight mb-6">
+                        The <span class="text-accent">Essence</span> of Tomorrow.
+                    </h1>
+                    <p class="text-gray-300 max-w-md mx-auto md:mx-0 mb-8 text-lg">
+                        Discover "Ethereal Night," our newest fragrance crafted with rare sandalwood, midnight jasmine, and a whisper of gold musk.
+                    </p>
+                    <a href="#featured" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-lg text-primary bg-accent hover:bg-opacity-90 transition duration-300 transform hover:scale-[1.05]">
+                        Shop Now
+                    </a>
+                </div>
+                
+                <!-- Product Mockup Image -->
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://placehold.co/400x500/b48b52/FFFFFF?text=Aura+Bottle" alt="Luxury Perfume Bottle" class="w-64 md:w-80 h-auto rounded-xl shadow-2xl transition duration-500 hover:rotate-1 hover:shadow-3xl" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/400x500/b48b52/FFFFFF?text=Aura+Bottle';">
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Grid -->
+        <section id="featured" class="py-16 sm:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-primary mb-4">Featured Scents</h2>
+                <p class="text-xl text-center text-gray-600 mb-12">Hand-picked fragrances for your refined taste.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Product Card 1: Ethereal Night -->
+                    <div class="bg-white rounded-xl shadow-xl overflow-hidden transform transition duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                        <img src="https://placehold.co/600x400/1a1a1a/b48b52?text=Ethereal+Night" alt="Perfume Bottle Ethereal Night" class="w-full h-64 object-cover object-center" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/600x400/1a1a1a/b48b52?text=Ethereal+Night';">
+                        <div class="p-6 text-center">
+                            <h3 class="text-2xl font-bold text-primary mb-1">Ethereal Night</h3>
+                            <p class="text-accent font-semibold mb-3">Woody & Spicy</p>
+                            <p class="text-gray-600 mb-4 text-sm">Notes of oud, black pepper, and warm vanilla. Intense and alluring.</p>
+                            <span class="text-2xl font-bold text-primary block mb-4">$150.00</span>
+                            <button class="w-full bg-primary text-white py-3 rounded-lg hover:bg-accent transition duration-300 font-medium">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2: Golden Hour -->
+                    <div class="bg-white rounded-xl shadow-xl overflow-hidden transform transition duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                        <img src="https://placehold.co/600x400/f7d794/1a1a1a?text=Golden+Hour" alt="Perfume Bottle Golden Hour" class="w-full h-64 object-cover object-center" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/600x400/f7d794/1a1a1a?text=Golden+Hour';">
+                        <div class="p-6 text-center">
+                            <h3 class="text-2xl font-bold text-primary mb-1">Golden Hour</h3>
+                            <p class="text-accent font-semibold mb-3">Citrus & Floral</p>
+                            <p class="text-gray-600 mb-4 text-sm">A bright blend of bergamot, orange blossom, and white tea leaves. Energetic and fresh.</p>
+                            <span class="text-2xl font-bold text-primary block mb-4">$120.00</span>
+                            <button class="w-full bg-primary text-white py-3 rounded-lg hover:bg-accent transition duration-300 font-medium">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3: Velvet Rain -->
+                    <div class="bg-white rounded-xl shadow-xl overflow-hidden transform transition duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                        <img src="https://placehold.co/600x400/a392b4/FFFFFF?text=Velvet+Rain" alt="Perfume Bottle Velvet Rain" class="w-full h-64 object-cover object-center" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/600x400/a392b4/FFFFFF?text=Velvet+Rain';">
+                        <div class="p-6 text-center">
+                            <h3 class="text-2xl font-bold text-primary mb-1">Velvet Rain</h3>
+                            <p class="text-accent font-semibold mb-3">Aquatic & Musk</p>
+                            <p class="text-gray-600 mb-4 text-sm">Crisp oceanic notes, lavender, and a subtle base of cashmere musk. Calming and sophisticated.</p>
+                            <span class="text-2xl font-bold text-primary block mb-4">$135.00</span>
+                            <button class="w-full bg-primary text-white py-3 rounded-lg hover:bg-accent transition duration-300 font-medium">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story / About Us Section -->
+        <section id="story" class="bg-white py-16 sm:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    
+                    <!-- Image Area -->
+                    <div class="md:w-1/2 flex justify-center">
+                        <div class="w-full max-w-lg h-96 rounded-xl shadow-luxury overflow-hidden border-4 border-accent">
+                            <img src="https://placehold.co/800x600/b48b52/1a1a1a?text=Handcrafted+Quality" alt="Perfume ingredients and craftsmanship" class="w-full h-full object-cover object-center" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/800x600/b48b52/1a1a1a?text=Handcrafted+Quality';">
+                        </div>
+                    </div>
+
+                    <!-- Content Area -->
+                    <div class="md:w-1/2 text-center md:text-left">
+                        <p class="text-accent text-lg font-semibold mb-3 tracking-widest uppercase">Our Heritage</p>
+                        <h2 class="text-4xl font-bold text-primary mb-6">The Art of Fine Fragrance</h2>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            At Aura Scents, we believe that true luxury is found in rarity and dedication. Founded in 1998, our house is dedicated to the traditional art of perfumery, sourcing only the finest, sustainable raw materials from around the globe.
+                        </p>
+                        <p class="text-gray-700 mb-8 leading-relaxed">
+                            Each bottle is a testament to meticulous craftsmanship—blended, macerated, and bottled
